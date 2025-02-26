@@ -1,0 +1,40 @@
+# shows what the file is
+# gives a short definition of the program
+
+FUNCTION main():
+    FUNCTION get_bill_amount():
+        bill_amount = flt(input("Enter the bill amount: $"))
+        IF the input is valid:
+            RETURN bill_amount
+        ELSE: 
+            DISPLAY error statement
+
+    FUNCTION get_tip_amount():
+        tip_percentage = integer(input("Enter the tip percentage (e.g., 15 for 15%): "))
+        IF the input is valid:
+            RETURN tip_percentage
+        ELSE: 
+            DISPLAY error statement
+
+        tip_amount = (tip_percentage / 100) * bill_amount
+        RETURN tip_amount
+
+    FUNCTION calculate_total_bill():
+        total_bill = bill_amount + tip_amount
+        RETURN total_bill
+
+    DISPLAY welcome statement
+
+    ASK for bill_amount using get_bill_amount()
+    ASK for tip_amount using get_tip_amount()
+
+    CALCULATE total_bill using calculate_total_bill()
+
+    DISPLAY tip summary statement
+    DISPLAY bill_amount 
+    DISPLAY tip_amount
+    DISPLAY total_bill
+
+    DISPLAY thank you statement, ending the program
+
+run the "main()" function here
